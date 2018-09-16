@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WdT-Vi-Y17">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RxTextFieldViewController-->
+        <scene sceneID="pyx-kH-jaJ">
+            <objects>
+                <viewController storyboardIdentifier="RxTextFieldViewController" title="RxTextFieldViewController" id="WdT-Vi-Y17" customClass="RxTextFieldViewController" customModule="RxSwift_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o67-W3-drt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jt7-8G-9lO">
+                                <rect key="frame" x="20" y="150" width="335" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="byU-LB-ouT">
+                                <rect key="frame" x="20" y="220" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5文字以上入力してください。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ox0-Ym-seD">
+                                <rect key="frame" x="69.5" y="323" width="235.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.63312145497808048" green="1" blue="0.98251202555031747" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Jt7-8G-9lO" firstAttribute="centerX" secondItem="o67-W3-drt" secondAttribute="centerX" id="8Hl-2t-eWn"/>
+                            <constraint firstItem="Jt7-8G-9lO" firstAttribute="leading" secondItem="oz0-6M-XRL" secondAttribute="leading" constant="20" id="EQF-bT-pV7"/>
+                            <constraint firstItem="byU-LB-ouT" firstAttribute="centerX" secondItem="o67-W3-drt" secondAttribute="centerX" id="MEO-Ab-qGy"/>
+                            <constraint firstItem="Ox0-Ym-seD" firstAttribute="top" secondItem="byU-LB-ouT" secondAttribute="bottom" constant="73" id="TQB-5z-eT0"/>
+                            <constraint firstItem="Jt7-8G-9lO" firstAttribute="top" secondItem="oz0-6M-XRL" secondAttribute="top" constant="130" id="TZP-Mc-LRY"/>
+                            <constraint firstItem="byU-LB-ouT" firstAttribute="top" secondItem="Jt7-8G-9lO" secondAttribute="bottom" constant="50" id="ZyR-M1-6Q9"/>
+                            <constraint firstItem="oz0-6M-XRL" firstAttribute="trailing" secondItem="byU-LB-ouT" secondAttribute="trailing" constant="20" id="jtr-1b-pam"/>
+                            <constraint firstItem="byU-LB-ouT" firstAttribute="leading" secondItem="oz0-6M-XRL" secondAttribute="leading" constant="20" id="lEK-0Y-1eH"/>
+                            <constraint firstItem="oz0-6M-XRL" firstAttribute="trailing" secondItem="Jt7-8G-9lO" secondAttribute="trailing" constant="20" id="m1M-di-S57"/>
+                            <constraint firstItem="Ox0-Ym-seD" firstAttribute="centerX" secondItem="o67-W3-drt" secondAttribute="centerX" id="mDd-J3-FJm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oz0-6M-XRL"/>
+                    </view>
+                    <connections>
+                        <outlet property="rxDemoLabel" destination="Jt7-8G-9lO" id="kTP-SH-Xmv"/>
+                        <outlet property="rxDemoTextField" destination="byU-LB-ouT" id="uU8-vm-quD"/>
+                        <outlet property="rxMessageLabel" destination="Ox0-Ym-seD" id="jA9-ZC-hHg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MCQ-ZB-e52" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="106" y="161"/>
+        </scene>
+    </scenes>
+</document>

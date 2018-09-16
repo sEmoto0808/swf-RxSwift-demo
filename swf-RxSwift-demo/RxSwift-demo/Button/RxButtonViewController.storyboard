@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xLr-cd-MtV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RxButtonViewController-->
+        <scene sceneID="vnY-YS-gGs">
+            <objects>
+                <viewController storyboardIdentifier="RxButtonViewController" title="RxButtonViewController" id="xLr-cd-MtV" customClass="RxButtonViewController" customModule="RxSwift_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n5m-vA-8Rd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Py9-FK-mYb">
+                                <rect key="frame" x="137" y="318" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.57051510828554486" green="0.86113673102584687" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1be-7x-CiC"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Py9-FK-mYb" firstAttribute="centerY" secondItem="n5m-vA-8Rd" secondAttribute="centerY" id="der-1Y-nca"/>
+                            <constraint firstItem="Py9-FK-mYb" firstAttribute="centerX" secondItem="n5m-vA-8Rd" secondAttribute="centerX" id="wGj-8O-z0U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wu2-Va-XZO"/>
+                    </view>
+                    <connections>
+                        <outlet property="rxButton" destination="Py9-FK-mYb" id="tYy-4n-ZRk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b1U-Pz-qM6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14" y="142"/>
+        </scene>
+    </scenes>
+</document>
