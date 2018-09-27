@@ -11,6 +11,8 @@
 		A23C4EC6214B5626009E137C /* RxHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23C4EC5214B5626009E137C /* RxHTTPClient.swift */; };
 		A23C4EC8214B594C009E137C /* RxHTTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23C4EC7214B594C009E137C /* RxHTTPViewController.swift */; };
 		A23C4ECA214B5956009E137C /* RxHTTPViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A23C4EC9214B5956009E137C /* RxHTTPViewController.storyboard */; };
+		A248EF3F215C863000F6DFDD /* RxHTTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A248EF3E215C863000F6DFDD /* RxHTTPViewModel.swift */; };
+		A248EF41215C868300F6DFDD /* RxHTTPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A248EF40215C868300F6DFDD /* RxHTTPModel.swift */; };
 		A26C9CC72141200700E0ECEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26C9CC62141200700E0ECEC /* AppDelegate.swift */; };
 		A26C9CC92141200700E0ECEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26C9CC82141200700E0ECEC /* ViewController.swift */; };
 		A26C9CCC2141200700E0ECEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26C9CCA2141200700E0ECEC /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 		A23C4EC5214B5626009E137C /* RxHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxHTTPClient.swift; sourceTree = "<group>"; };
 		A23C4EC7214B594C009E137C /* RxHTTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxHTTPViewController.swift; sourceTree = "<group>"; };
 		A23C4EC9214B5956009E137C /* RxHTTPViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RxHTTPViewController.storyboard; sourceTree = "<group>"; };
+		A248EF3E215C863000F6DFDD /* RxHTTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxHTTPViewModel.swift; sourceTree = "<group>"; };
+		A248EF40215C868300F6DFDD /* RxHTTPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxHTTPModel.swift; sourceTree = "<group>"; };
 		A26C9CC32141200700E0ECEC /* RxSwift-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26C9CC62141200700E0ECEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A26C9CC82141200700E0ECEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,11 +69,37 @@
 		A23C4EC4214B55F7009E137C /* HTTP */ = {
 			isa = PBXGroup;
 			children = (
+				A248EF42215CB92E00F6DFDD /* M */,
+				A248EF43215CB94000F6DFDD /* V */,
+				A248EF44215CB94F00F6DFDD /* VM */,
 				A23C4EC5214B5626009E137C /* RxHTTPClient.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		A248EF42215CB92E00F6DFDD /* M */ = {
+			isa = PBXGroup;
+			children = (
+				A248EF40215C868300F6DFDD /* RxHTTPModel.swift */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		A248EF43215CB94000F6DFDD /* V */ = {
+			isa = PBXGroup;
+			children = (
 				A23C4EC7214B594C009E137C /* RxHTTPViewController.swift */,
 				A23C4EC9214B5956009E137C /* RxHTTPViewController.storyboard */,
 			);
-			path = HTTP;
+			path = V;
+			sourceTree = "<group>";
+		};
+		A248EF44215CB94F00F6DFDD /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				A248EF3E215C863000F6DFDD /* RxHTTPViewModel.swift */,
+			);
+			path = VM;
 			sourceTree = "<group>";
 		};
 		A26C9CBA2141200700E0ECEC = {
@@ -250,12 +280,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A248EF3F215C863000F6DFDD /* RxHTTPViewModel.swift in Sources */,
 				A23C4EC6214B5626009E137C /* RxHTTPClient.swift in Sources */,
 				A2CB3646214A36D800E3FC9A /* RxButtonViewController.swift in Sources */,
 				A26C9CC92141200700E0ECEC /* ViewController.swift in Sources */,
 				A26C9CC72141200700E0ECEC /* AppDelegate.swift in Sources */,
 				A23C4EC8214B594C009E137C /* RxHTTPViewController.swift in Sources */,
 				A2CF5D882141214D002A28BD /* RxTextFieldViewController.swift in Sources */,
+				A248EF41215C868300F6DFDD /* RxHTTPModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

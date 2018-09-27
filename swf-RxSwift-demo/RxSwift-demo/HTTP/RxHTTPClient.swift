@@ -11,7 +11,7 @@ import RxSwift
 
 final class RxHTTPClient {
     
-    func fetchData(request:URLRequest) -> Observable<Data> {
+    func fetchData(request: URLRequest) -> Observable<Data> {
         
         return Observable.create { observer in
             // subscribeされた時の処理
