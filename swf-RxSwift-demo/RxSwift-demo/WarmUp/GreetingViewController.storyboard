@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GreetingViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="GreetingViewController" title="GreetingViewController" id="BYZ-38-t0r" customClass="GreetingViewController" customModule="RxSwift_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="挨拶の練習：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CzQ-BF-Qdv">
+                                <rect key="frame" x="35" y="55" width="104" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="tH8-wI-C6k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4E-uU-fIf">
+                                <rect key="frame" x="147" y="55" width="194" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aad-3d-qNA">
+                                <rect key="frame" x="33" y="91.5" width="309" height="29"/>
+                                <segments>
+                                    <segment title="挨拶の始まり選択"/>
+                                    <segment title="自由入力にする"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7T1-Gb-fm8">
+                                <rect key="frame" x="141" y="135.5" width="200" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ご挨拶のはじまり：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eW-zN-wuG">
+                                <rect key="frame" x="33" y="181.5" width="156" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="23h-m6-EXc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="X2g-N0-Scg" userLabel="Greeting Start Buttons">
+                                <rect key="frame" x="36.5" y="218" width="302" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unA-6b-L6L">
+                                        <rect key="frame" x="0.0" y="0.0" width="62" height="30"/>
+                                        <state key="normal" title="おはよう"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLc-75-IIn">
+                                        <rect key="frame" x="70" y="0.0" width="77" height="30"/>
+                                        <state key="normal" title="こんにちは"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rr-1O-VdZ">
+                                        <rect key="frame" x="155" y="0.0" width="77" height="30"/>
+                                        <state key="normal" title="こんばんは"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwf-lR-XBj">
+                                        <rect key="frame" x="240" y="0.0" width="62" height="30"/>
+                                        <state key="normal" title="おやすみ"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="お名前：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bD0-LQ-K1i">
+                                <rect key="frame" x="33" y="264" width="70" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="bUc-Wz-pkp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TJL-wC-lOl">
+                                <rect key="frame" x="35" y="300.5" width="305" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自由入力：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apZ-68-ncK">
+                                <rect key="frame" x="35" y="140.5" width="87" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CzQ-BF-Qdv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="6rx-7e-wZc"/>
+                            <constraint firstItem="TJL-wC-lOl" firstAttribute="top" secondItem="bD0-LQ-K1i" secondAttribute="bottom" constant="16" id="8mc-4P-wrJ"/>
+                            <constraint firstItem="X2g-N0-Scg" firstAttribute="top" secondItem="2eW-zN-wuG" secondAttribute="bottom" constant="16" id="Bs4-gy-fI0"/>
+                            <constraint firstItem="aad-3d-qNA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="ENd-Aq-W02"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7T1-Gb-fm8" secondAttribute="trailing" constant="34" id="GZM-5R-gUU"/>
+                            <constraint firstItem="X2g-N0-Scg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H22-rO-rzx"/>
+                            <constraint firstItem="aad-3d-qNA" firstAttribute="top" secondItem="CzQ-BF-Qdv" secondAttribute="bottom" constant="16" id="HuO-10-867"/>
+                            <constraint firstItem="apZ-68-ncK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="IaZ-Hf-H24"/>
+                            <constraint firstItem="bD0-LQ-K1i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="Mr5-se-n8z"/>
+                            <constraint firstItem="7T1-Gb-fm8" firstAttribute="top" secondItem="aad-3d-qNA" secondAttribute="bottom" constant="16" id="T2g-Vz-k2W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W4E-uU-fIf" secondAttribute="trailing" constant="34" id="WIz-HI-hNI"/>
+                            <constraint firstItem="2eW-zN-wuG" firstAttribute="top" secondItem="7T1-Gb-fm8" secondAttribute="bottom" constant="16" id="XS8-e2-VyL"/>
+                            <constraint firstItem="7T1-Gb-fm8" firstAttribute="leading" secondItem="apZ-68-ncK" secondAttribute="trailing" constant="19" id="XX1-HM-8Vl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aad-3d-qNA" secondAttribute="trailing" constant="33" id="avT-VQ-znS"/>
+                            <constraint firstItem="TJL-wC-lOl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="gH6-Mj-Rbm"/>
+                            <constraint firstItem="CzQ-BF-Qdv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="hZN-bs-fFY"/>
+                            <constraint firstItem="aad-3d-qNA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l5s-wQ-aJx"/>
+                            <constraint firstItem="apZ-68-ncK" firstAttribute="top" secondItem="aad-3d-qNA" secondAttribute="bottom" constant="21" id="leY-Xd-PV7"/>
+                            <constraint firstItem="W4E-uU-fIf" firstAttribute="leading" secondItem="CzQ-BF-Qdv" secondAttribute="trailing" constant="8" id="nl4-9x-awL"/>
+                            <constraint firstItem="W4E-uU-fIf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="oQZ-Ui-4ly"/>
+                            <constraint firstItem="2eW-zN-wuG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="p0H-op-bTR"/>
+                            <constraint firstItem="bD0-LQ-K1i" firstAttribute="top" secondItem="X2g-N0-Scg" secondAttribute="bottom" constant="16" id="uxe-QY-E3w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TJL-wC-lOl" secondAttribute="trailing" constant="35" id="vCH-Fh-QUt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="freeTextField" destination="7T1-Gb-fm8" id="L58-JB-rra"/>
+                        <outlet property="greetingLabel" destination="W4E-uU-fIf" id="2kn-29-M8p"/>
+                        <outlet property="nameTextField" destination="TJL-wC-lOl" id="oVz-ry-VGI"/>
+                        <outlet property="stateSegmentedControl" destination="aad-3d-qNA" id="l2Q-EP-Bd8"/>
+                        <outletCollection property="greetingButtons" destination="unA-6b-L6L" collectionClass="NSMutableArray" id="gTk-ju-XNv"/>
+                        <outletCollection property="greetingButtons" destination="iLc-75-IIn" collectionClass="NSMutableArray" id="P9r-Bz-fsT"/>
+                        <outletCollection property="greetingButtons" destination="8rr-1O-VdZ" collectionClass="NSMutableArray" id="Eog-cl-IdW"/>
+                        <outletCollection property="greetingButtons" destination="jwf-lR-XBj" collectionClass="NSMutableArray" id="n8J-U1-1oO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

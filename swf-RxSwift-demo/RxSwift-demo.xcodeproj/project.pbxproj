@@ -18,6 +18,8 @@
 		A26C9CCC2141200700E0ECEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26C9CCA2141200700E0ECEC /* Main.storyboard */; };
 		A26C9CCE2141200900E0ECEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A26C9CCD2141200900E0ECEC /* Assets.xcassets */; };
 		A26C9CD12141200900E0ECEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26C9CCF2141200900E0ECEC /* LaunchScreen.storyboard */; };
+		A2A8D785215DD51C008AB1EA /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A8D783215DD51C008AB1EA /* GreetingViewController.swift */; };
+		A2A8D786215DD51C008AB1EA /* GreetingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2A8D784215DD51C008AB1EA /* GreetingViewController.storyboard */; };
 		A2CB3646214A36D800E3FC9A /* RxButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CB3645214A36D800E3FC9A /* RxButtonViewController.swift */; };
 		A2CB3648214A36E400E3FC9A /* RxButtonViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2CB3647214A36E400E3FC9A /* RxButtonViewController.storyboard */; };
 		A2CF5D882141214D002A28BD /* RxTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CF5D872141214D002A28BD /* RxTextFieldViewController.swift */; };
@@ -38,6 +40,8 @@
 		A26C9CCD2141200900E0ECEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A26C9CD02141200900E0ECEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A26C9CD22141200900E0ECEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2A8D783215DD51C008AB1EA /* GreetingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
+		A2A8D784215DD51C008AB1EA /* GreetingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GreetingViewController.storyboard; sourceTree = "<group>"; };
 		A2CB3645214A36D800E3FC9A /* RxButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxButtonViewController.swift; sourceTree = "<group>"; };
 		A2CB3647214A36E400E3FC9A /* RxButtonViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RxButtonViewController.storyboard; sourceTree = "<group>"; };
 		A2CF5D872141214D002A28BD /* RxTextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTextFieldViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 		A26C9CC52141200700E0ECEC /* RxSwift-demo */ = {
 			isa = PBXGroup;
 			children = (
+				A2A8D787215DEDBD008AB1EA /* WarmUp */,
 				A23C4EC4214B55F7009E137C /* HTTP */,
 				A2CB3644214A36B700E3FC9A /* Button */,
 				A2CF5D862141210D002A28BD /* TextField and Label */,
@@ -134,6 +139,15 @@
 				A26C9CD22141200900E0ECEC /* Info.plist */,
 			);
 			path = "RxSwift-demo";
+			sourceTree = "<group>";
+		};
+		A2A8D787215DEDBD008AB1EA /* WarmUp */ = {
+			isa = PBXGroup;
+			children = (
+				A2A8D784215DD51C008AB1EA /* GreetingViewController.storyboard */,
+				A2A8D783215DD51C008AB1EA /* GreetingViewController.swift */,
+			);
+			path = WarmUp;
 			sourceTree = "<group>";
 		};
 		A2CB3644214A36B700E3FC9A /* Button */ = {
@@ -226,6 +240,7 @@
 				A26C9CD12141200900E0ECEC /* LaunchScreen.storyboard in Resources */,
 				A23C4ECA214B5956009E137C /* RxHTTPViewController.storyboard in Resources */,
 				A2CF5D8A21412159002A28BD /* RxTextFieldViewController.storyboard in Resources */,
+				A2A8D786215DD51C008AB1EA /* GreetingViewController.storyboard in Resources */,
 				A26C9CCE2141200900E0ECEC /* Assets.xcassets in Resources */,
 				A26C9CCC2141200700E0ECEC /* Main.storyboard in Resources */,
 				A2CB3648214A36E400E3FC9A /* RxButtonViewController.storyboard in Resources */,
@@ -287,6 +302,7 @@
 				A26C9CC72141200700E0ECEC /* AppDelegate.swift in Sources */,
 				A23C4EC8214B594C009E137C /* RxHTTPViewController.swift in Sources */,
 				A2CF5D882141214D002A28BD /* RxTextFieldViewController.swift in Sources */,
+				A2A8D785215DD51C008AB1EA /* GreetingViewController.swift in Sources */,
 				A248EF41215C868300F6DFDD /* RxHTTPModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
